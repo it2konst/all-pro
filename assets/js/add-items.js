@@ -2,6 +2,7 @@
 // });
 
 const cardsContainer = document.querySelector('.portfolio__grid');
+
 // Функция для создания элемента
 const createCard = (myCard) => {
     const cardEl = document.createElement('li');
@@ -19,6 +20,7 @@ const createCard = (myCard) => {
         `;
     return cardsContainer.appendChild(cardEl);
 };
+
 // Загрузка данных
 fetch('./assets/data/options.json')
     .then(response => response.json())

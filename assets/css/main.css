@@ -67,10 +67,6 @@ fieldset {
   margin: 0;
 }
 
-@font-face {
-  font-family: "england";
-  src: url("/assets/fonts/england.woff") format("woff");
-}
 html {
   scroll-behavior: smooth;
 }
@@ -295,6 +291,10 @@ h2 {
     background-position: 0% 50%;
   }
 }
+@font-face {
+  font-family: "England";
+  src: url("./assets/fonts/england.woff") format("woff");
+}
 :root {
   --lights: rgb(91, 235, 115);
 }
@@ -304,7 +304,7 @@ h2 {
   margin: 0 auto;
   text-align: center;
   font-size: 4rem;
-  font-family: england;
+  font-family: England;
   color: white;
   text-shadow: 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 1vh var(--lights);
   animation: flicker 7s infinite;

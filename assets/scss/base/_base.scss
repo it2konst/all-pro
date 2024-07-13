@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@font-face {
+    font-family: "england";
+    src: url("/assets/fonts/england.woff") format("woff");
+}
 
 html {
     scroll-behavior: smooth;
@@ -7,7 +11,7 @@ html {
 
 body {
     //background-color: #2a2a2a;
-	background-color: $dark;
+    background-color: $dark;
 }
 
 .container {

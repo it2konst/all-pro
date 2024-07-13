@@ -67,6 +67,10 @@ fieldset {
   margin: 0;
 }
 
+@font-face {
+  font-family: "england";
+  src: url("/assets/fonts/england.woff") format("woff");
+}
 html {
   scroll-behavior: smooth;
 }
@@ -295,10 +299,6 @@ h2 {
   --lights: rgb(91, 235, 115);
 }
 
-@font-face {
-  font-family: "england";
-  src: url("/assets/fonts/england.woff") format("woff");
-}
 .neon-title {
   padding: 20px 0 0 0;
   margin: 0 auto;

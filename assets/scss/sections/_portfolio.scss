@@ -12,7 +12,7 @@
     margin: 0px 15px;
     margin-bottom: 30px;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 1rem;
 }
 
 .filters {
@@ -25,7 +25,8 @@
 
 .portfolio__grid li img {
     max-width: 100%;
-    border-radius: 10px;
+    border-radius: 1rem;
+    opacity: 0.9;
 }
 
 .filters button {
@@ -34,7 +35,7 @@
     margin: 0px 5px;
     background-color: #121212;
     border: none;
-    border-radius: 10px;
+    border-radius: 1rem;
     transition: 150ms;
     color: #ffffff;
     font-size: 16px;
@@ -55,6 +56,8 @@
     background-color: #121212;
     color: #ddd;
     cursor: pointer;
+    position: relative;
+    background: linear-gradient(#000, #262626);
 
     &:before,
     &:after {
@@ -80,8 +83,8 @@
         background-size: 500%;
         z-index: -1;
         animation: animate 30s ease infinite;
-        opacity: 0.3;
-        border-radius: 50%;
+        opacity: 0.1;
+        // border-radius: 50%;
     }
 
     &:after {
@@ -91,10 +94,8 @@
     transition: border-radius 0.2s ease, margin 0.2s ease;
 
     &:hover {
-        position: relative;
-        background: linear-gradient(#000, #262626);
         margin: 2px;
-        border-radius: 50%;
+        z-index: 1;
     }
 }
 
@@ -128,15 +129,21 @@
 }
 
 .element-item p {
-    font: 400 1.125rem / 1.33 "Lato", sans-serif;
+    font: 400 1.125rem / 1.3 "Lato", sans-serif;
+
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 0 0.5rem;
+    border-radius: 1rem;
 
     overflow: hidden;
     text-overflow: ellipsis;
-    display: -webkit-box;
+
+    // display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 
-    max-height: 2.66rem; // Высота для двух строк
+    max-height: 3rem; // Высота для двух строк
     transition: max-height 0.4s ease;
 
     &:hover {
@@ -175,7 +182,7 @@
         position: relative;
         background: linear-gradient(#000, #262626);
         margin: 2px;
-        border-radius: 50%;
+        // border-radius: 50%;
     }
 }
 

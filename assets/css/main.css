@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ol,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+cite {
+  font-style: normal;
+}
+
+fieldset {
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #242b33;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1140px;
+}
+.container--sm {
+  max-width: 840px;
+}
+
+.none {
+  display: none !important;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.visually-hidden {
+  /* Contain text within 1px box */
+  height: 1px;
+  overflow: hidden;
+  width: 1px;
+  /* Keep the layout */
+  position: absolute;
+  /* Remove any visible trace (e.g. background color) */
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%); /* browsers in the future */
+  /* Prevent the screen reader to skip spaces between words */
+  white-space: nowrap;
+}
+
+a {
+  color: #fff;
+  transition: color 0.2s ease-in;
+}
+a:hover {
+  color: #d4c17f;
+}
+
+.portfolio__grid {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.portfolio__grid > li {
+  width: calc(33.3333333333% - 30px);
+  margin: 0px 15px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.filters {
+  margin-top: 40px;
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio__grid li img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.filters button {
+  font: 400 1.125rem/1.5 "Lato", sans-serif;
+  padding: 10px 25px;
+  margin: 0px 5px;
+  background-color: #121212;
+  border: none;
+  border-radius: 10px;
+  transition: 150ms;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 700;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+}
+
+.filters button.is-checked {
+  background-color: #fff;
+  color: #121212;
+}
+
+.element-item > div {
+  padding: 20px 15px;
+  background-color: #121212;
+  color: #ddd;
+  cursor: pointer;
+  transition: border-radius 0.2s ease, margin 0.2s ease;
+}
+.element-item > div:before, .element-item > div:after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+  background-size: 500%;
+  z-index: -1;
+  animation: animate 30s ease infinite;
+  opacity: 0.3;
+  border-radius: 50%;
+}
+.element-item > div:after {
+  filter: blur(25px);
+}
+.element-item > div:hover {
+  position: relative;
+  background: linear-gradient(#000, #262626);
+  margin: 2px;
+  border-radius: 50%;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.element-item h2 {
+  font: 500 1.6rem/1.8 "Roboto", sans-serif;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.element-item h2:hover {
+  -webkit-line-clamp: 10;
+  max-height: 20rem;
+}
+
+.element-item p {
+  font: 400 1.125rem/1.33 "Lato", sans-serif;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  max-height: 2.66rem;
+  transition: max-height 0.4s ease;
+}
+.element-item p:hover {
+  -webkit-line-clamp: 10;
+  max-height: 20rem;
+}
+
+@media (max-width: 767px) {
+  .filters button {
+    padding: 5px 10px;
+    margin: 5px;
+  }
+  .portfolio__grid > li {
+    width: calc(100% - 30px);
+  }
+  .element-item p {
+    font-size: 16px;
+    line-height: 22px;
+    -webkit-line-clamp: 10;
+    max-height: 20rem;
+  }
+  .portfolio__grid {
+    margin: 20px auto;
+  }
+  .filters {
+    margin-top: 20px;
+  }
+  .element-item > div {
+    position: relative;
+    background: linear-gradient(#000, #262626);
+    margin: 2px;
+    border-radius: 50%;
+  }
+}
+h2 {
+  place-self: center;
+  background: linear-gradient(90deg, hsl(0, 95%, 65%), hsl(90, 95%, 65%), hsl(180, 95%, 65%), hsl(270, 95%, 65%), hsl(0, 95%, 65%));
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  color: transparent;
+  font: 900 clamp(0.875em, 7.25vw, 5em) arial black, sans-serif;
+  filter: url(#f);
+  background-size: 400% 400%;
+  animation: gradient 4s linear infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+:root {
+  --lights: rgb(91, 235, 115);
+}
+
+@font-face {
+  font-family: "England";
+  src: url("/assets/fonts/England.woff2") format("woff2"), url("/assets/fonts/England.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.neon-title {
+  padding: 20px 0 0 0;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 4rem;
+  font-family: England;
+  color: white;
+  text-shadow: 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 1vh var(--lights);
+  animation: flicker 7s infinite;
+  filter: brightness(1);
+}
+
+@keyframes flicker {
+  9% {
+    text-shadow: 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 1vh var(--lights);
+    filter: brightness(1);
+  }
+  10% {
+    text-shadow: none;
+    filter: brightness(0.4);
+  }
+  11% {
+    text-shadow: 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 1vh var(--lights);
+    filter: brightness(1);
+  }
+  12% {
+    text-shadow: none;
+    filter: brightness(0.4);
+  }
+  13% {
+    text-shadow: 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 1vh var(--lights);
+    filter: brightness(1);
+  }
+  66% {
+    text-shadow: 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 1vh var(--lights);
+    filter: brightness(1);
+  }
+  67% {
+    text-shadow: none;
+    filter: brightness(0.4);
+  }
+  75% {
+    text-shadow: none;
+    filter: brightness(0.4);
+  }
+  76% {
+    text-shadow: 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 1vh var(--lights);
+    filter: brightness(1);
+  }
+}/*# sourceMappingURL=main.css.map */

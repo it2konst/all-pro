@@ -1,0 +1,84 @@
+:root {
+    --lights: rgb(91, 235, 115);
+}
+
+@font-face {
+    // src: url(https://dl.dropbox.com/s/df4zz9y6lmhocr9/England.otf?dl=0);
+    font-family: "England";
+    src: url("/assets/fonts/England.woff2") format("woff2"),
+        url("/assets/fonts/England.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+.neon-title {
+    // position: fixed;
+    // margin: auto;
+    // top: 0;
+    // bottom: 0;
+    // left: 0;
+    // right: 0;
+    // height: 1vh;
+    // line-height: 1vh;
+
+    padding: 20px 0 0 0;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 4rem;
+    font-family: England;
+    color: white;
+    text-shadow: 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights),
+        0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 1vh var(--lights);
+    animation: flicker 7s infinite;
+    filter: brightness(1);
+}
+
+@keyframes flicker {
+    9% {
+        text-shadow: 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights),
+            0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights),
+            0 0 1vh var(--lights);
+        filter: brightness(1);
+    }
+    10% {
+        text-shadow: none;
+        filter: brightness(0.4);
+    }
+    11% {
+        text-shadow: 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights),
+            0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights),
+            0 0 1vh var(--lights);
+        filter: brightness(1);
+    }
+    12% {
+        text-shadow: none;
+        filter: brightness(0.4);
+    }
+    13% {
+        text-shadow: 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights),
+            0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights),
+            0 0 1vh var(--lights);
+        filter: brightness(1);
+    }
+    66% {
+        text-shadow: 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights),
+            0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights),
+            0 0 1vh var(--lights);
+        filter: brightness(1);
+    }
+    67% {
+        text-shadow: none;
+        filter: brightness(0.4);
+    }
+    75% {
+        text-shadow: none;
+        filter: brightness(0.4);
+    }
+    76% {
+        text-shadow: 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights),
+            0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights),
+            0 0 1vh var(--lights);
+        filter: brightness(1);
+    }
+}

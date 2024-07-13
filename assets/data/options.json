@@ -1,0 +1,18 @@
+[
+  {
+    "filterName": "cat-1",
+    "cardTitle": "“Portfolio Website“",
+    "cardDesc": "Адаптивный веб-сайт, разработанный с использованием SCSS и JavaScript, а также методологии BEM, служит визитной карточкой для представления моих работ и навыков.",
+    "onclick": "https://it2konst.com/portfolio/index.html",
+    "imgSrc": "./assets/img/html/portfolio-website.jpg",
+    "alt": "gallery-img"
+  },
+  {
+    "filterName": "cat-2",
+    "cardTitle": "“Portfolio WP“",
+    "cardDesc": "Адаптивная верстка, (CSS, JavaScript и PHP вставки), натянутая на WordPress",
+    "onclick": "https://it2konst.com/index.php",
+    "imgSrc": "./assets/img/word-press/portfolio-wp.jpg",
+    "alt": "gallery-img"
+  }
+]

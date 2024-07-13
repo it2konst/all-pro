@@ -1,0 +1,254 @@
+.portfolio__grid {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.portfolio__grid > li {
+    width: calc(100% / 3 - 30px);
+    margin: 0px 15px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.filters {
+    margin-top: 40px;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio__grid li img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.filters button {
+    font: 400 1.125rem / 1.5 "Lato", sans-serif;
+    padding: 10px 25px;
+    margin: 0px 5px;
+    background-color: #121212;
+    border: none;
+    border-radius: 10px;
+    transition: 150ms;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 700;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+}
+
+.filters button.is-checked {
+    background-color: #fff;
+    color: #121212;
+}
+
+.element-item > div {
+    padding: 20px 15px;
+    background-color: #121212;
+    color: #ddd;
+    // margin: 2px;
+    cursor: pointer;
+
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        bottom: -2px;
+        left: -2px;
+        background: linear-gradient(
+            45deg,
+            #fb0094,
+            #0000ff,
+            #00ff00,
+            #ffff00,
+            #ff0000,
+            #fb0094,
+            #0000ff,
+            #00ff00,
+            #ffff00,
+            #ff0000
+        );
+        background-size: 500%;
+        z-index: -1;
+        animation: animate 30s ease infinite;
+        opacity: 0.3;
+        border-radius: 50%;
+    }
+
+    &:after {
+        filter: blur(25px);
+    }
+
+    transition: border-radius 0.2s ease, margin 0.2s ease;
+
+    &:hover {
+        position: relative;
+        background: linear-gradient(#000, #262626);
+        margin: 2px;
+        border-radius: 50%;
+    }
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 300% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.element-item h2 {
+    font: 500 1.6rem / 1.8 "Roboto", sans-serif;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+
+    &:hover {
+        -webkit-line-clamp: 10;
+        max-height: 20rem;
+    }
+}
+
+.element-item p {
+    font: 400 1.125rem / 1.33 "Lato", sans-serif;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    max-height: 2.66rem; // Высота для двух строк
+    transition: max-height 0.4s ease;
+
+    &:hover {
+        -webkit-line-clamp: 10;
+        max-height: 20rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .filters button {
+        padding: 5px 10px;
+        margin: 5px;
+    }
+
+    .portfolio__grid > li {
+        width: calc(100% - 30px);
+    }
+
+    .element-item p {
+        font-size: 16px;
+        line-height: 22px;
+
+        -webkit-line-clamp: 10;
+        max-height: 20rem;
+    }
+
+    .portfolio__grid {
+        margin: 20px auto;
+    }
+
+    .filters {
+        margin-top: 20px;
+    }
+
+    .element-item > div {
+        position: relative;
+        background: linear-gradient(#000, #262626);
+        margin: 2px;
+        border-radius: 50%;
+    }
+}
+
+//---------------------------
+h2 {
+    place-self: center;
+    background: linear-gradient(
+        90deg,
+        hsl(0deg, 95%, 65%),
+        hsl(90deg, 95%, 65%),
+        hsl(180deg, 95%, 65%),
+        hsl(270deg, 95%, 65%),
+        hsl(360deg, 95%, 65%)
+    );
+    // text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+
+    color: transparent;
+    font: 900 clamp(0.875em, 7.25vw, 5em) arial black, sans-serif;
+    filter: url(#f);
+    background-size: 400% 400%;
+    animation: gradient 4s linear infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+//--------------------------------------------
+
+// .ring {
+//     opacity: 0;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 50%;
+//     border-radius: 60%;
+//     border: 1px solid #ccc;
+
+//     transition: opacity 1s ease;
+
+//     &:hover {
+//         opacity: 1;
+//         animation: ring 2s linear infinite;
+//     }
+
+// }
+
+// @keyframes ring {
+//     0% {
+//         transform: rotate(0deg);
+//         box-shadow: 1px 5px 2px #e65c00;
+//     }
+//     50% {
+//         transform: rotate(180deg);
+//         box-shadow: 1px 5px 2px #18b201;
+//     }
+//     100% {
+//         transform: rotate(360deg);
+//         box-shadow: 1px 5px 2px #0456c8;
+//     }
+// }

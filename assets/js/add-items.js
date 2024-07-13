@@ -20,7 +20,7 @@ const createCard = (myCard) => {
     return cardsContainer.appendChild(cardEl);
 };
 // Загрузка данных
-fetch('./assets/js/data/options.json')
+fetch('./assets/data/options.json')
     .then(response => response.json())
     .then(data => {
         data.forEach(myCard => {

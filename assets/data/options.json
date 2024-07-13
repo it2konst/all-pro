@@ -1,5 +1,13 @@
 [
   {
+    "filterName": "cat-3",
+    "cardTitle": "“Apartment catalog“",
+    "cardDesc": "Проект представляет собой одностраничное веб-приложение (SPA), написанное на языке JavaScript, реализующее архитектурный паттерн MVC (Model-View-Controller). Приложение обеспечивает взаимодействие с сервером для получения и отправки данных, что позволяет динамически обновлять интерфейс без перезагрузки страницы.",
+    "onclick": "https://it2konst.com/apartment-catalog/index.html",
+    "imgSrc": "./assets/img/js/catalog-metr.jpg",
+    "alt": "gallery-img"
+  },
+  {
     "filterName": "cat-1",
     "cardTitle": "“Portfolio Website“",
     "cardDesc": "Адаптивный веб-сайт, разработанный с использованием SCSS и JavaScript, а также методологии BEM, служит визитной карточкой для представления моих работ и навыков.",
@@ -9,7 +17,7 @@
   },
   {
     "filterName": "cat-2",
-    "cardTitle": "“Portfolio WP“",
+    "cardTitle": "“Portfolio WordPress“",
     "cardDesc": "Адаптивная верстка, (CSS, JavaScript и PHP вставки), натянутая на WordPress",
     "onclick": "https://it2konst.com/index.php",
     "imgSrc": "./assets/img/word-press/portfolio-wp.jpg",

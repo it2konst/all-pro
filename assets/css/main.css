@@ -234,13 +234,13 @@ a:hover {
   transition: max-height 0.4s ease;
 }
 .element-item p:hover {
-  -webkit-line-clamp: 10;
-  max-height: 20rem;
+  -webkit-line-clamp: 20;
+  max-height: 30rem;
 }
 
 @media (max-width: 767px) {
   .filters button {
-    padding: 5px 10px;
+    padding: 5px 12px;
     margin: 5px;
   }
   .portfolio__grid > li {
@@ -249,8 +249,8 @@ a:hover {
   .element-item p {
     font-size: 16px;
     line-height: 22px;
-    -webkit-line-clamp: 10;
-    max-height: 20rem;
+    -webkit-line-clamp: 20;
+    max-height: 30rem;
   }
   .portfolio__grid {
     margin: 20px auto;

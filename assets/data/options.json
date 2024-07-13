@@ -16,6 +16,14 @@
     "alt": "gallery-img"
   },
   {
+    "filterName": "cat-4",
+    "cardTitle": "“Timber processing plant“",
+    "cardDesc": "Адаптивный веб-сайт, созданный для рекламы и продвижения продукции лесоперерабатывающего завода. Проект разработан с использованием SCSS для стилизации и JavaScript для динамического контента, структурирован по методологии БЭМ для обеспечения чистоты и поддерживаемости кода.",
+    "onclick": "https://it2konst.com/alpha/index.html",
+    "imgSrc": "./assets/img/test-tasks/alpha.jpg",
+    "alt": "gallery-img"
+  },
+  {
     "filterName": "cat-2",
     "cardTitle": "“Portfolio WordPress“",
     "cardDesc": "Адаптивная верстка, (CSS, JavaScript и PHP вставки), натянутая на WordPress",

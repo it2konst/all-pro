@@ -142,6 +142,8 @@ a:hover {
 }
 
 .portfolio__grid li img {
+  display: block;
+  margin: 0 auto;
   max-width: 100%;
   border-radius: 1rem;
   opacity: 0.9;
@@ -262,9 +264,11 @@ a:hover {
     margin-top: 20px;
   }
   .element-item > div {
-    position: relative;
-    background: linear-gradient(#000, #262626);
     margin: 2px;
+    border-radius: 1rem;
+  }
+  .element-item > div:before, .element-item > div:after {
+    opacity: 0.4;
   }
 }
 h2 {

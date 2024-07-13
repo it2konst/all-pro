@@ -67,10 +67,6 @@ fieldset {
   margin: 0;
 }
 
-@font-face {
-  font-family: "England";
-  src: url("./assets/fonts/england.woff") format("woff");
-}
 html {
   scroll-behavior: smooth;
 }
@@ -294,6 +290,11 @@ h2 {
   100% {
     background-position: 0% 50%;
   }
+}
+@font-face {
+  font-family: "England";
+  src: url("../fonts/england.woff2") format("woff2"), url("../fonts/england.woff") format("woff");
+  font-weight: normal;
 }
 :root {
   --lights: rgb(91, 235, 115);

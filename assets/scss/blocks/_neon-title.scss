@@ -3,7 +3,7 @@
 }
 
 @font-face {
-    font-family: "England";
+    font-family: "england";
     src: url("/assets/fonts/england.woff") format("woff");
 }
 
@@ -21,7 +21,7 @@
     margin: 0 auto;
     text-align: center;
     font-size: 4rem;
-    font-family: England;
+    font-family: england;
     color: white;
     text-shadow: 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights),
         0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 1vh var(--lights);

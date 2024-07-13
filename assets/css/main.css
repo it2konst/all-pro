@@ -298,9 +298,6 @@ h2 {
 @font-face {
   font-family: "England";
   src: url("/assets/fonts/england.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
 }
 .neon-title {
   padding: 20px 0 0 0;

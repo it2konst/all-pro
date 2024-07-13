@@ -1,5 +1,5 @@
 This is my portfolio, showcasing my skills and projects. In this portfolio, you will find examples of my work using modern web technologies. I focus on code quality, performance, and usability.
-Technologies:
+Technologies:<br>
 • SCSS: Used for creating clean and structured CSS code, making it easier to manage and enhance styles.
 • JavaScript: Applied to add interactivity and dynamic elements to web pages.
 • HTML: The main markup language used for creating the structure of web pages.

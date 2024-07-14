@@ -38,5 +38,13 @@
     "onclick": "https://it2konst.github.io/loft-house/",
     "imgSrc": "./assets/img/html/loft-house.jpg",
     "alt": "gallery-img"
+  },
+  {
+    "filterName": "cat-4",
+    "cardTitle": "“Nikulin's Bureau“",
+    "cardDesc": "Technical Stack: HTML/SCSS/GRID. Проект представляет собой адаптивную веб-страницу, разработанную с использованием технологий HTML, SCSS и GRID. Страница точно воспроизводит предоставленный прототип, обеспечивая гармоничное масштабирование элементов в пропорции 16:9. Интерактивные блоки проектов не только привлекают внимание, но и корректно отображаются на всех типах экранов, обеспечивая удобство использования.",
+    "onclick": "https://it2konst.github.io/test-task-a-kh/",
+    "imgSrc": "./assets/img/test-tasks/a-kh.jpg",
+    "alt": "gallery-img"
   }
 ]

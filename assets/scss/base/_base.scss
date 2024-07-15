@@ -1,20 +1,20 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("./fonts/Roboto-Regular.woff2") format("woff2"),
+        url("./fonts/Roboto-Regular.woff") format("woff");
+}
 
-// @font-face {
-//     font-family: "RalewayRegular";
-//     src: url("../fonts/RalewayRegular/RalewayRegular.eot");
-//     src: url("../fonts/RalewayRegular/RalewayRegular.eot?#iefix") format("embedded-opentype"),
-//     url("../fonts/RalewayRegular/RalewayRegular.woff") format("woff"),
-//     url("../fonts/RalewayRegular/RalewayRegular.ttf") format("truetype");
-//     font-style: normal;
-//     font-weight: normal;
-//     }
+@font-face {
+    font-family: "Lato-Regular";
+    src: url("./fonts/Lato-Regular.woff2") format("woff2"),
+        url("./fonts/Lato-Regular.woff") format("woff");
+}
 
-// @font-face {
-//     font-family: "England";
-//     src: url("./assets/fonts/england.woff") format("woff");
-// }
+@font-face {
+    font-family: "England";
+    src: url("./fonts/England.woff2") format("woff2"),
+        url("./fonts/England.woff") format("woff");
+}
 
 html {
     scroll-behavior: smooth;
@@ -27,7 +27,7 @@ body {
 
 .container {
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 1rem;
     max-width: 1140px;
 
     &--sm {

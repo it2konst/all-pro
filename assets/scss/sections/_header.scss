@@ -1,0 +1,10 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+
+    @include breakpoint(md) {
+        padding: 20px 0;
+    }
+}

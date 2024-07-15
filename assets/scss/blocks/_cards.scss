@@ -1,0 +1,226 @@
+.portfolio__grid {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.portfolio__grid > li {
+    width: calc(100% / 3 - 30px);
+    margin: 0px 15px;
+    margin-bottom: 30px;
+    // overflow: hidden;
+    border-radius: 1rem;
+
+    &:hover {
+        z-index: 9;
+    }
+}
+
+.portfolio__grid li img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 1rem;
+    opacity: 0.9;
+}
+
+.element-item > div {
+    padding: 1rem 1rem;
+    background-color: #121212;
+    color: #ddd;
+    cursor: pointer;
+    position: relative;
+    background: linear-gradient(#000, #262626);
+
+    border-radius: 1rem;
+
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        bottom: -2px;
+        left: -2px;
+        background: linear-gradient(
+            45deg,
+            #00ff99,
+            #32cd32,
+            #00bfff,
+            #7cfc00,
+            #8a2be2,
+            #00ff99,
+            #32cd32,
+            #00bfff,
+            #7cfc00,
+            #8a2be2
+        );
+        background-size: 500%;
+        z-index: -1;
+        animation: animate 30s ease infinite;
+        opacity: 0.2;
+        border-radius: 1rem;
+
+        transition: opacity 0.3s ease;
+    }
+
+    &:after {
+        filter: blur(25px);
+    }
+}
+
+.element-item > div:hover:before,
+.element-item > div:hover:after {
+    opacity: 0;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 300% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.card-title {
+    font: 500 1.6rem / 1.2 "Roboto-Regular", sans-serif;
+    // font: 900 clamp(0.875rem, 7.25vw, 5rem) / 11.5 arial black, sans-serif;
+
+    margin: 10px 0px;
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -moz-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    max-height: 2.4rem; // Высота для двух строк
+
+    place-self: center;
+    background: linear-gradient(
+        90deg,
+        hsl(0deg, 95%, 65%),
+        hsl(90deg, 95%, 65%),
+        hsl(180deg, 95%, 65%),
+        hsl(270deg, 95%, 65%),
+        hsl(360deg, 95%, 65%)
+    );
+    // text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    color: transparent;
+    background-size: 400% 400%;
+
+    &:hover {
+        -webkit-line-clamp: 10;
+        -moz-line-clamp: 10;
+        max-height: 20rem;
+    }
+
+    animation: gradient 4s linear infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.element-item p {
+    font: 400 1rem / 1.3 "Lato-Regular", sans-serif;
+
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 0 0.5rem;
+    border-radius: 1rem;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -moz-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    max-height: 2.6rem; // Высота для двух строк
+
+    transition: max-height 0.3s ease-in;
+
+    &:hover {
+        -webkit-line-clamp: 20;
+        -moz-line-clamp: 20;
+        max-height: 30rem;
+    }
+}
+
+@include breakpoint(md) {
+    .portfolio__grid {
+        margin: 20px auto;
+    }
+
+    .portfolio__grid > li {
+        width: calc(100% - 30px);
+    }
+
+    .element-item > div {
+        border-radius: 1rem;
+    }
+
+    .element-item p {
+        font-size: 1rem;
+        line-height: 1.375rem;
+
+        max-height: 30rem;
+        -webkit-line-clamp: 20;
+    }
+}
+
+// .ring {
+//     opacity: 0;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 50%;
+//     border-radius: 60%;
+//     border: 1px solid #ccc;
+
+//     transition: opacity 1s ease;
+
+//     &:hover {
+//         opacity: 1;
+//         animation: ring 2s linear infinite;
+//     }
+
+// }
+
+// @keyframes ring {
+//     0% {
+//         transform: rotate(0deg);
+//         box-shadow: 1px 5px 2px #e65c00;
+//     }
+//     50% {
+//         transform: rotate(180deg);
+//         box-shadow: 1px 5px 2px #18b201;
+//     }
+//     100% {
+//         transform: rotate(360deg);
+//         box-shadow: 1px 5px 2px #0456c8;
+//     }
+// }

@@ -2,6 +2,7 @@
 @import "./base/reset";
 @import "./base/vars";
 @import "./base/base";
+@import "./base/mixins";
 
 // Sections
 @import "./sections/header";
@@ -10,3 +11,4 @@
 
 // Blocks
 @import "./blocks/neon-title";
+@import "./blocks/cards";

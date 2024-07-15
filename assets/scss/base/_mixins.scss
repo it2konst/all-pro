@@ -1,16 +1,31 @@
-@mixin decorNumber {
-    position: absolute;
-    top: 0;
-    z-index: -1;
+// Breakpoint	        Class infix	    Dimensions
+// X-Small	            None	        <576px
+// Small	            sm	            ≥576px
+// Medium	            md	            ≥768px
+// Large	            lg	            ≥992px
+// Extra large	        xl	            ≥1200px
+// Extra extra large	xxl	            ≥1400px
 
-    opacity: 0.02;
-    line-height: 1.15;
-    font-size: 400px;
-    font-family: $font-accent;
-}
+// @include breakpoint (lg) {
+//     flex: 0 0 100%;
+// }
 
-@mixin mediaTablet {
-    @media screen and (max-width: $tablet) {
-        @content;
+@mixin breakpoint($point) {
+    @if $point==lg {
+        @media (max-width: 992px) {
+            @content;
+        }
+    } @else if $point==md {
+        @media (max-width: 768px) {
+            @content;
+        }
+    } @else if $point==sm {
+        @media (max-width: 576px) {
+            @content;
+        }
+    } @else if $point==xsm {
+        @media (max-width: 500px) {
+            @content;
+        }
     }
 }

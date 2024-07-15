@@ -1,24 +1,15 @@
-@font-face {
-    font-family: "England";
-    src: url("./../fonts/england.woff2") format("woff2"),
-        url("./../fonts/england.woff") format("woff");
-    font-weight: normal;
-}
-
 :root {
     --lights: rgb(91, 235, 115);
 }
 
 .neon-title {
-    padding: 20px 0 0 0;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 4rem;
-    font-family: England;
+    font: 400 4rem / 1 "England", sans-serif;
     color: white;
+
     text-shadow: 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights),
         0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 1vh var(--lights);
     animation: flicker 7s infinite;
+
     filter: brightness(1);
 }
 

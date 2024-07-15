@@ -14,7 +14,7 @@ const createCard = (myCard) => {
     cardEl.innerHTML = `
         <div class="card-el">
             <img src="${myCard.imgSrc}" alt="${myCard.alt}">
-            <h2>${myCard.cardTitle}</h2>
+            <h2 class="card-title">${myCard.cardTitle}</h2>
             <p>${myCard.cardDesc}</p>
         </div> 
         `;

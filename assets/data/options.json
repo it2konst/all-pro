@@ -27,7 +27,7 @@
     "filterName": "cat-3",
     "cardTitle": "“Бюджетный калькулятор на MVC“",
     "cardDesc": "&#128166;<i>html, css, JavaScript.</i><br>Веб-приложение, разработанное с использованием архитектуры MVC (Model-View-Controller) на JavaScript. Приложение позволяет пользователям легко отслеживать и управлять своими доходами и расходами, предоставляя удобный интерфейс для ввода и анализа финансовых данных.",
-    "onclick": "https://it2konst.com/budget-calc-mvc/index.html",
+    "onclick": "https://it2konst.github.io/budget-calc-mvc/",
     "imgSrc": "./assets/img/cards-img/js/budget-calc-mvc.jpg",
     "alt": "Калькулятор на MVC"
   },

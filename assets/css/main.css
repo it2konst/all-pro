@@ -145,6 +145,15 @@ a:hover {
   color: #d4c17f;
 }
 
+button {
+  outline: none;
+}
+@media (pointer: coarse) {
+  button {
+    box-shadow: none;
+  }
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -176,6 +185,11 @@ a:hover {
   position: relative;
   outline: none;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   transition: 150ms, color 0.2s ease-in;
 }
 .filters button:before, .filters button:after {
@@ -232,6 +246,9 @@ footer {
   text-shadow: 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 0.5vh var(--lights), 0 0 1vh var(--lights);
   animation: flicker 7s infinite;
   filter: brightness(1);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 @keyframes flicker {
@@ -305,6 +322,11 @@ footer {
   position: relative;
   background: linear-gradient(#000, #262626);
   border-radius: 1rem;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .element-item > div:before, .element-item > div:after {
   content: "";
@@ -444,6 +466,9 @@ footer {
   margin-left: 1rem;
   background-color: transparent;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
 }
@@ -469,6 +494,11 @@ footer {
   width: 100%;
 }
 
+.nav-menu {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
 .nav-menu ul {
   display: flex;
 }

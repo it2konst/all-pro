@@ -30,6 +30,7 @@
     background-color: transparent;
     cursor: pointer;
 
+    user-select: none;
     @include no-tap-highlight;
 }
 
@@ -68,6 +69,8 @@
 // }
 
 .nav-menu {
+    user-select: none;
+
     ul {
         display: flex;
     }

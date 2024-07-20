@@ -3,8 +3,6 @@
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 40px auto;
-    // padding: 0;
-    // list-style-type: none;
 }
 
 .portfolio__tab-cards > li {
@@ -35,6 +33,8 @@
     background: linear-gradient(#000, #262626);
 
     border-radius: 1rem;
+    @include no-tap-highlight;
+    user-select: none;
 
     &:before,
     &:after {

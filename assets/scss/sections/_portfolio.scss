@@ -18,6 +18,9 @@
     outline: none;
     cursor: pointer;
 
+    @include no-tap-highlight;
+    user-select: none;
+
     &:before,
     &:after {
         content: "";

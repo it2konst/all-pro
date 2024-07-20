@@ -11,6 +11,7 @@
     animation: flicker 7s infinite;
 
     filter: brightness(1);
+    user-select: none;
 }
 
 @keyframes flicker {

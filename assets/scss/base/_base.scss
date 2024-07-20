@@ -94,3 +94,11 @@ a {
         color: $accent;
     }
 }
+
+button {
+    outline: none;
+
+    @media (pointer: coarse) {
+        box-shadow: none;
+    }
+}

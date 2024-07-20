@@ -17,15 +17,25 @@ const createCard = (myCard) => {
             <h2 class="card-title">${myCard.cardTitle}</h2>
             <p>${myCard.cardDesc}</p>
         </div> 
-        `;
-    return cardsContainer.appendChild(cardEl);
+    `;
+    return cardEl;
 };
+
+// Скрыть карточки на время загрузки
+cardsContainer.style.display = 'none';
 
 // Загрузка данных
 fetch('./assets/data/options.json')
     .then(response => response.json())
     .then(data => {
         data.forEach(myCard => {
-            createCard(myCard);
+            cardsContainer.appendChild(createCard(myCard));
         });
+        // Показать карточки после загрузки
+        cardsContainer.style.display = 'flex';
+    })
+    .catch(error => {
+        console.error('Ошибка загрузки данных:', error);
+        // Показать карточки даже в случае ошибки, чтобы не оставлять контейнер скрытым
+        cardsContainer.style.display = 'flex';
     });

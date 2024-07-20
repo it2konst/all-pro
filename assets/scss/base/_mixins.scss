@@ -29,3 +29,8 @@
         }
     }
 }
+
+@mixin no-tap-highlight {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}

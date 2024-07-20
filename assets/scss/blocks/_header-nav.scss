@@ -24,17 +24,19 @@
 .logo {
     width: 22%;
     max-width: 10rem;
-    min-width: 5rem;
+    min-width: 6rem;
 
     margin-left: 1rem;
     background-color: transparent;
     cursor: pointer;
 
-    img {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
+    @include no-tap-highlight;
+}
+
+.logo__img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .hamburger {
@@ -44,13 +46,27 @@
     min-width: 5rem;
 
     background-color: transparent;
-
-    svg {
-        display: block;
-        width: 100%;
-    }
+    @include no-tap-highlight;
 }
-//----------------------------------------
+
+.hamburger__svg {
+    display: block;
+    width: 100%;
+}
+
+// &:hover,
+// &:focus {
+//     @media (pointer: coarse) {
+//         box-shadow: none;
+//     }
+// }
+
+// &:active {
+//     @media (pointer: coarse) {
+//         box-shadow: none;
+//     }
+// }
+
 .nav-menu {
     ul {
         display: flex;

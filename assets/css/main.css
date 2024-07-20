@@ -440,12 +440,15 @@ footer {
 .logo {
   width: 22%;
   max-width: 10rem;
-  min-width: 5rem;
+  min-width: 6rem;
   margin-left: 1rem;
   background-color: transparent;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
 }
-.logo img {
+
+.logo__img {
   display: block;
   width: 100%;
   height: auto;
@@ -457,8 +460,11 @@ footer {
   max-width: 10rem;
   min-width: 5rem;
   background-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
 }
-.hamburger svg {
+
+.hamburger__svg {
   display: block;
   width: 100%;
 }

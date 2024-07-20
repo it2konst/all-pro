@@ -9,7 +9,7 @@
     font: 400 1rem / 1.5 "Lato-Regular", sans-serif;
     padding: 10px 25px;
     margin: 0px 5px;
-    color: $white;
+    color: $white-ccc;
     border-radius: 1rem;
     border: none;
     background-color: #121212;
@@ -52,7 +52,11 @@
         filter: blur(25px);
     }
 
-    transition: 150ms;
+    transition: 150ms, color 0.2s ease-in;
+
+    &:hover {
+        color: $accent;
+    }
 
     @include breakpoint(md) {
         padding: 5px 12px;

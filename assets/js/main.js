@@ -10,7 +10,8 @@ function loadScript(src) {
 
 async function loadScripts() {
     const scripts = [
-        './assets/js/add-items.js',
+        './assets/js/items-add.js',
+        './assets/js/nav-menu.js',
         './assets/js/libs/jquery-3.1.1.min.js',
         './assets/js/libs/sort-items.js'
     ];

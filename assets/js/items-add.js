@@ -1,7 +1,7 @@
 // document.addEventListener('DOMContentLoaded', () => {
 // });
 
-const cardsContainer = document.querySelector('.portfolio__grid');
+const cardsContainer = document.querySelector('.portfolio__tab-cards');
 
 // Функция для создания элемента
 const createCard = (myCard) => {

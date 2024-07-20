@@ -2,49 +2,49 @@
   {
     "filterName": "cat-3",
     "cardTitle": "“Apartment catalog“",
-    "cardDesc": "&#128166;<i>html, css, JS, bootstrap.</i>&#128166; <br>Одностраничное веб-приложение (SPA), написанное на языке JavaScript, реализующее архитектурный паттерн MVC (Model-View-Controller). Приложение обеспечивает взаимодействие с сервером для получения и отправки данных, что позволяет динамически обновлять интерфейс без перезагрузки страницы.",
+    "cardDesc": "&#128166;<i>html, css, JS, bootstrap.</i><br>Одностраничное веб-приложение (SPA), написанное на языке JavaScript, реализующее архитектурный паттерн MVC (Model-View-Controller). Приложение обеспечивает взаимодействие с сервером для получения и отправки данных, что позволяет динамически обновлять интерфейс без перезагрузки страницы.",
     "onclick": "https://it2konst.com/apartment-catalog/index.html",
-    "imgSrc": "./assets/img/js/catalog-metr.jpg",
+    "imgSrc": "./assets/img/cards-img/js/catalog-metr.jpg",
     "alt": "gallery-img"
   },
   {
     "filterName": "cat-1",
     "cardTitle": "“Portfolio Website“",
-    "cardDesc": "&#128166;<i>html, scss, JS, grid.</i>&#128166; <br>Адаптивный веб-сайт, разработанный с использованием SCSS и JavaScript, а также методологии BEM, служит визитной карточкой для представления моих работ и навыков.",
+    "cardDesc": "&#128166;<i>html, scss, JS, grid.</i><br>Адаптивный веб-сайт, разработанный с использованием SCSS и JavaScript, а также методологии BEM, служит визитной карточкой для представления моих работ и навыков.",
     "onclick": "https://it2konst.com/portfolio/index.html",
-    "imgSrc": "./assets/img/html/portfolio-website.jpg",
+    "imgSrc": "./assets/img/cards-img/html/portfolio-website.jpg",
     "alt": "gallery-img"
   },
   {
     "filterName": "cat-4",
     "cardTitle": "“Timber processing plant“",
-    "cardDesc": "&#128166;<i>html, scss, JS, Swiper</i>&#128166; <br>Выполненное тестовое задание. Адаптивный веб-сайт, созданный для рекламы и продвижения продукции лесоперерабатывающего завода. Проект разработан с использованием SCSS для стилизации и JavaScript для динамического контента, структурирован по методологии БЭМ для обеспечения чистоты и поддерживаемости кода.",
+    "cardDesc": "&#128166;<i>html, scss, JS, Swiper.</i><br><strong>Выполненное тестовое задание.</strong> Адаптивный веб-сайт, созданный для рекламы и продвижения продукции лесоперерабатывающего завода. Проект разработан с использованием SCSS для стилизации и JavaScript для динамического контента, структурирован по методологии БЭМ для обеспечения чистоты и поддерживаемости кода.",
     "onclick": "https://it2konst.com/alpha/index.html",
-    "imgSrc": "./assets/img/test-tasks/alpha.jpg",
+    "imgSrc": "./assets/img/cards-img/test-tasks/alpha.jpg",
     "alt": "gallery-img"
   },
   {
     "filterName": "cat-2",
     "cardTitle": "“Portfolio WordPress“",
-    "cardDesc": "&#128166;<i>html, css, JS, jquery, WordPress, PHP</i>&#128166; <br>Адаптивная верстка, натянутая на WordPress",
+    "cardDesc": "&#128166;<i>html, css, JS, jquery, WordPress, PHP.</i><br>Адаптивная верстка, натянутая на WordPress",
     "onclick": "https://it2konst.com/index.php",
-    "imgSrc": "./assets/img/word-press/portfolio-wp.jpg",
+    "imgSrc": "./assets/img/cards-img/word-press/portfolio-wp.jpg",
     "alt": "gallery-img"
   },
   {
     "filterName": "cat-1",
     "cardTitle": "“Loft-House“",
-    "cardDesc": "&#128166;<i>html, scss, JS, grid.</i>&#128166; <br>Адаптивный веб-сайт для продажи квартир, разработанный с использованием SCSS и JavaScript. Сайт построен на основе CSS Grid и методологии BEM, что обеспечивает гибкость и структурированность его кода.",
+    "cardDesc": "&#128166;<i>html, scss, JS, grid.</i><br>Адаптивный веб-сайт для продажи квартир, разработанный с использованием SCSS и JavaScript. Сайт построен на основе CSS Grid и методологии BEM, что обеспечивает гибкость и структурированность его кода.",
     "onclick": "https://it2konst.github.io/loft-house/",
-    "imgSrc": "./assets/img/html/loft-house.jpg",
+    "imgSrc": "./assets/img/cards-img/html/loft-house.jpg",
     "alt": "gallery-img"
   },
   {
     "filterName": "cat-4",
     "cardTitle": "“Nikulin's Bureau“",
-    "cardDesc": "&#128166;<i>html, scss, grid.</i>&#128166; <br>Выполненное тестовое задание. Проект представляет собой адаптивную веб-страницу, которая точно воспроизводит предоставленный прототип, обеспечивая гармоничное масштабирование элементов в пропорции 16:9. Интерактивные блоки проектов не только привлекают внимание, но и корректно отображаются на всех типах экранов, обеспечивая удобство использования.",
+    "cardDesc": "&#128166;<i>html, scss, grid.</i><br><strong>Выполненное тестовое задание.</strong> Проект представляет собой адаптивную веб-страницу, которая точно воспроизводит предоставленный прототип, обеспечивая гармоничное масштабирование элементов в пропорции 16:9. Интерактивные блоки проектов не только привлекают внимание, но и корректно отображаются на всех типах экранов, обеспечивая удобство использования.",
     "onclick": "https://it2konst.github.io/test-task-a-kh/",
-    "imgSrc": "./assets/img/test-tasks/a-kh.jpg",
+    "imgSrc": "./assets/img/cards-img/test-tasks/a-kh.jpg",
     "alt": "gallery-img"
   }
 ]

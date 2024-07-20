@@ -25,6 +25,31 @@ body {
     background-color: $dark;
 }
 
+.bg-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.bg-img {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    // background: url("./../img/bg/body-img.jpg");
+    background: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0) 60%,
+            #242b33 100%
+        ),
+        url("./../img/bg/body-img.jpg");
+    background-repeat: no-repeat repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+    opacity: 0.4;
+}
+
 .container {
     margin: 0 auto;
     padding: 0 1rem;
@@ -62,7 +87,7 @@ body {
 }
 
 a {
-    color: $white;
+    color: $white-ccc;
     transition: color 0.2s ease-in;
 
     &:hover {

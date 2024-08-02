@@ -83,6 +83,7 @@ html {
 
 body {
   background-color: #242b33;
+  overflow-x: hidden;
 }
 
 .bg-wrapper {

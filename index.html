@@ -17,11 +17,11 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header container">
         <div class="header__nav">
             <div class="header__nav-wrapper">
                 <div class="logo">
-                    <img class="logo__img" src="./assets/img/logo.svg" alt="Logo: KonstBerg" onclick="window.location.href='./'">
+                    <img src="./assets/img/logo.svg" alt="Logo: KonstBerg" onclick="window.location.href='./'">
                 </div>
                 <div class="hamburger" onclick="clickHamburger(this)">
                     <svg class="hamburger__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"> <!-- width="50" height="50" -->
@@ -45,13 +45,13 @@
                 </ul>
             </nav>
         </div>
-        <div class="neon-title">Portfolio</div>
     </header>
 
     <section class="portfolio">
+        <div class="neon-title">Portfolio</div>
         <h1 class="portfolio__title visually-hidden">Portfolio: Konstantin Bergamentov</h1>
         <div class="portfolio__tab" data-js="portfolio__tab">
-            <div class="portfolio__tab-buttons filters button-group js-radio-button-group device-type">
+            <div class="portfolio__tab-buttons filters button-group js-radio-button-group device-type container">
                 <button class="button is-checked" data-filter="*">All projects</button>
                 <button class="button" data-filter=".cat-1">HTML верстка</button>
                 <button class="button" data-filter=".cat-2">WordPress</button>

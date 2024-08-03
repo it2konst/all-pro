@@ -3,6 +3,9 @@
 }
 
 .neon-title {
+    display: grid;
+    place-items: center;
+
     font: 400 4rem / 1 "England", sans-serif;
     font-size: $fz-64-48;
     color: #fff;

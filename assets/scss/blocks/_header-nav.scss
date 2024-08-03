@@ -4,14 +4,9 @@
     align-items: center;
 
     width: 100%;
-    margin-bottom: 20px;
 
     font: 400 1rem / 1.5 "Lato-Regular", sans-serif;
     color: $white-ccc;
-
-    @include breakpoint(md) {
-        margin-bottom: 5px;
-    }
 }
 
 .header__nav-wrapper {
@@ -22,22 +17,20 @@
 }
 
 .logo {
+    display: grid;
+    place-items: center;
+    // padding-top: 0.5rem;
+    // margin-left: 0.5rem;
+
     width: 22%;
     max-width: 10rem;
     min-width: 6rem;
 
-    margin-left: 1rem;
     background-color: transparent;
     cursor: pointer;
 
     user-select: none;
     @include no-tap-highlight;
-}
-
-.logo__img {
-    display: block;
-    width: 100%;
-    height: auto;
 }
 
 .hamburger {
@@ -94,17 +87,20 @@
     }
 
     .nav-menu {
+        visibility: hidden;
         width: 100%;
         max-height: 0rem;
         opacity: 0;
         background-color: rgba(255, 255, 255, 0.1);
 
-        transition: max-height 0.3s ease;
+        transition: max-height 0.4s ease, opacity 0.4s ease,
+            margin-bottom 0.4s ease;
 
         &.active-hg {
+            visibility: visible;
             opacity: 1;
             max-height: 10rem;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
         }
 
         ul {

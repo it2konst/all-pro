@@ -156,12 +156,7 @@ button {
 }
 
 .header {
-  padding: 2rem 2rem 1rem 2.5rem;
-}
-@media screen and (max-width: 768px) {
-  .header {
-    padding: 1rem 1rem 0rem 3rem;
-  }
+  padding: 2rem 2rem 0rem 2rem;
 }
 
 .portfolio .neon-title {
@@ -508,6 +503,12 @@ footer {
           user-select: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
+  margin-left: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    margin-left: 2rem;
+  }
 }
 
 .hamburger {

@@ -158,6 +158,11 @@ button {
 .header {
   padding: 2rem 2rem 0rem 2rem;
 }
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 0rem 1rem 0rem 0rem;
+  }
+}
 
 .portfolio .neon-title {
   margin-bottom: 2rem;
@@ -503,6 +508,7 @@ footer {
           user-select: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
+  margin-top: 0.5rem;
   margin-left: 1rem;
 }
 @media screen and (max-width: 768px) {

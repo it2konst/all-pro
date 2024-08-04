@@ -1,13 +1,17 @@
 const navMenu = document.querySelector('.nav-menu');
-let navHamburger = '';
+let navHamburger = null;
 
-function clickHamburger(button) {
-  button.classList.toggle('active-hg');
-  navMenu.classList.toggle('active-hg');
+const toggleActiveClass = (element) => element.classList.toggle('active-hg');
+
+const clickHamburger = (button) => {
+  toggleActiveClass(button);
+  toggleActiveClass(navMenu);
   navHamburger = button;
-}
+};
 
-function clickNavMenu() {
-  navHamburger.classList.toggle('active-hg');
-  navMenu.classList.toggle('active-hg');
-}
+const clickNavMenu = () => {
+  if (navHamburger) {
+    toggleActiveClass(navHamburger);
+    toggleActiveClass(navMenu);
+  }
+};

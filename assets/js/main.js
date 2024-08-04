@@ -1,14 +1,12 @@
-function loadScript(src) {
-    return new Promise((resolve, reject) => {
-        const script = document.createElement('script');
-        script.src = src;
-        script.onload = () => resolve(src);
-        script.onerror = () => reject(new Error(`Failed to load script ${src}`));
-        document.head.appendChild(script);
-    });
-}
+const loadScript = (src) => new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    script.src = src;
+    script.onload = () => resolve(src);
+    script.onerror = () => reject(new Error(`Failed to load script ${src}`));
+    document.head.appendChild(script);
+});
 
-async function loadScripts() {
+const loadScripts = async () => {
     const scripts = [
         './assets/js/items-add.js',
         './assets/js/nav-menu.js',
@@ -24,6 +22,6 @@ async function loadScripts() {
     } catch (error) {
         console.error('Error loading scripts:', error);
     }
-}
+};
 
 loadScripts();

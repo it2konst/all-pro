@@ -31,10 +31,8 @@
     &:after {
         content: "";
         position: absolute;
-        top: -2px;
-        right: -2px;
-        bottom: -2px;
         left: -2px;
+        top: -2px;
         background: linear-gradient(
             45deg,
             #00ff99,
@@ -48,29 +46,50 @@
             #7cfc00,
             #8a2be2
         );
-        background-size: 500%;
+        background-size: 400%;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
         z-index: -1;
-        animation: animate 30s ease infinite;
+        animation: steam 20s linear infinite;
+
         opacity: 0.2;
         border-radius: 2rem;
-
         transition: opacity 0.3s ease;
     }
 
-    &:after {
-        filter: blur(25px);
+    @keyframes steam {
+        0% {
+            background-position: 0 0;
+        }
+        50% {
+            background-position: 400% 0;
+        }
+        100% {
+            background-position: 0 0;
+        }
     }
 
-    transition: 150ms, color 0.2s ease-in;
+    &:after {
+        filter: blur(0.5rem);
+    }
 
     &:hover {
         color: $accent;
     }
 }
 
-.filters button:hover:before,
-.filters button:hover:after {
-    opacity: 0;
+@media (hover: hover) {
+    .filters button:hover:before,
+    .filters button:hover:after {
+        opacity: 0;
+    }
+}
+
+@media (hover: none) {
+    .filters button:active:before,
+    .filters button:active:after {
+        opacity: 0;
+    }
 }
 
 .filters button.is-checked {

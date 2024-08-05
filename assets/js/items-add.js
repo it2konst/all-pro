@@ -4,10 +4,10 @@
 const cardsContainer = document.querySelector('.portfolio__tab-cards');
 
 const createCard = (myCard) => {
-    const cardEl = document.createElement('li');
-    cardEl.classList.add('element-item', myCard.filterName);
-    cardEl.dataset.category = myCard.filterName;
-    cardEl.addEventListener('click', () => window.open(myCard.onclick, '_blank'));
+    const cardInner = document.createElement('li');
+    cardInner.classList.add('tab-card', myCard.filterName);
+    cardInner.dataset.category = myCard.filterName;
+    cardInner.addEventListener('click', () => window.open(myCard.onclick, '_blank'));
 
     const icons = {
         html: 'fa-html5',
@@ -21,19 +21,19 @@ const createCard = (myCard) => {
         icons[tech] ? `<div class="icon-box"><i class="fa-brands ${icons[tech]}"></i></div>` : '').join('') || '';
 
     const cardContent = `
-        <div class="card-el">
-            <div class="card-images">
+        <div class="tab-card__wrapper">
+            <div class="tab-card__image">
                 <img src="${myCard.imgSrc}" alt="${myCard.alt}" loading="lazy">
-                <div class="card-icons">
+                <div class="tab-card__icons">
                     ${iconsHtml}
                 </div>
             </div>
-            <h2 class="card-title">${myCard.cardTitle}</h2>
-            <p>${myCard.cardDesc}</p>
+            <h2 class="tab-card__title">${myCard.cardTitle}</h2>
+            <p class="tab-card__desc">${myCard.cardDesc}</p>
         </div>`;
 
-    cardEl.innerHTML = cardContent;
-    return cardEl;
+    cardInner.innerHTML = cardContent;
+    return cardInner;
 };
 
 const toggleCardsVisibility = (isVisible) => {

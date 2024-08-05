@@ -97,3 +97,10 @@
     color: #121212;
     font-weight: bold;
 }
+
+.portfolio__tab-cards {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 40px auto;
+}

@@ -67,15 +67,24 @@ fieldset {
 
 @font-face {
   font-family: "Roboto-Regular";
+  font-style: normal;
+  font-weight: 500;
   src: url("./fonts/Roboto-Regular.woff2") format("woff2"), url("./fonts/Roboto-Regular.woff") format("woff");
+  font-display: swap;
 }
 @font-face {
   font-family: "Lato-Regular";
+  font-style: normal;
+  font-weight: 400;
   src: url("./fonts/Lato-Regular.woff2") format("woff2"), url("./fonts/Lato-Regular.woff") format("woff");
+  font-display: swap;
 }
 @font-face {
   font-family: "England";
+  font-style: normal;
+  font-weight: 400;
   src: url("./fonts/England.woff2") format("woff2"), url("./fonts/England.woff") format("woff");
+  font-display: swap;
 }
 html {
   scroll-behavior: smooth;
@@ -109,9 +118,6 @@ body {
   margin: 0 auto;
   padding: 0 1rem;
   max-width: 1140px;
-}
-.container--sm {
-  max-width: 840px;
 }
 
 .none {

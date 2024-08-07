@@ -1,5 +1,7 @@
 .header {
-    padding: 2rem 2rem 0rem 2rem;
+    width: 100%;
+
+    padding: 2rem 2rem 2rem 2rem;
 
     @include breakpoint(md) {
         padding: 0rem 0rem 0rem 0rem;

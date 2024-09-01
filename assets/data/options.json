@@ -1,8 +1,16 @@
-[
+[  {
+    "filterName": "cat-4",
+    "cardTitle": "“Evacuator“",
+	"technologies": ["html", "scss", "JS", "grid"],
+    "cardDesc": "<i>Тестовое задание.</i> Проект представляет собой адаптивную веб-страницу, которая точно воспроизводит предоставленный макет",
+    "onclick": "https://it2konst.github.io/evacuator/",
+    "imgSrc": "./assets/img/cards-img/test-tasks/evacuator.webp",
+    "alt": "gallery-img"
+  },
   {
     "filterName": "cat-1",
     "cardTitle": "“Study English“",
-	  "technologies": ["html", "scss", "JS", "grid"],
+	 "technologies": ["html", "scss", "JS", "grid"],
     "cardDesc": "<i>Проект в разарботке.</i><br>&#9749;",
     "onclick": "https://it2konst.github.io/es-lp/",
     "imgSrc": "./assets/img/cards-img/html/es-lp.jpg",
@@ -11,7 +19,7 @@
   {
     "filterName": "cat-3",
     "cardTitle": "“Apartment catalog“",
-	  "technologies": ["html", "css", "JS", "bootstrap"],
+	 "technologies": ["html", "css", "JS", "bootstrap"],
     "cardDesc": "Одностраничное веб-приложение (SPA), написанное на языке JavaScript, реализующее архитектурный паттерн MVC (Model-View-Controller). Приложение обеспечивает взаимодействие с сервером для получения и отправки данных, что позволяет динамически обновлять интерфейс без перезагрузки страницы.",
     "onclick": "https://it2konst.com/apartment-catalog/index.html",
     "imgSrc": "./assets/img/cards-img/js/catalog-metr.jpg",
@@ -20,7 +28,7 @@
   {
     "filterName": "cat-1",
     "cardTitle": "“Sport Watch“",
-	  "technologies": ["html", "css", "JS"],
+	 "technologies": ["html", "css", "JS"],
     "cardDesc": "<i>Проект в разарботке.</i><br>&#9749;",
     "onclick": "https://it2konst.github.io/sport-watch/",
     "imgSrc": "./assets/img/cards-img/html/sport-watch.jpg",
@@ -29,7 +37,7 @@
   {
     "filterName": "cat-1",
     "cardTitle": "“Portfolio Website“",
-	  "technologies": ["html", "scss", "JS", "grid"],
+	"technologies": ["html", "scss", "JS", "grid"],
     "cardDesc": "Адаптивный веб-сайт, разработанный с использованием SCSS и JavaScript, а также методологии BEM, служит визитной карточкой для представления моих работ и навыков.",
     "onclick": "https://it2konst.com/portfolio/index.html",
     "imgSrc": "./assets/img/cards-img/html/portfolio-website.jpg",
@@ -38,7 +46,7 @@
   {
     "filterName": "cat-4",
     "cardTitle": "“Timber processing plant“",
-	  "technologies": ["html", "scss", "JS", "Swiper"],
+	"technologies": ["html", "scss", "JS", "Swiper"],
     "cardDesc": "<i>Тестовое задание.</i> Адаптивный веб-сайт, созданный для рекламы и продвижения продукции лесоперерабатывающего завода. Проект разработан с использованием SCSS для стилизации и JavaScript для динамического контента, структурирован по методологии БЭМ для обеспечения чистоты и поддерживаемости кода.",
     "onclick": "https://it2konst.com/alpha/index.html",
     "imgSrc": "./assets/img/cards-img/test-tasks/alpha.jpg",
@@ -47,7 +55,7 @@
   {
     "filterName": "cat-3",
     "cardTitle": "“Budget calculator on MVC“",
-	  "technologies": ["html", "css", "JS"],
+	"technologies": ["html", "css", "JS"],
     "cardDesc": "Веб-приложение, разработанное с использованием архитектуры MVC (Model-View-Controller) на JavaScript. Приложение позволяет пользователям легко отслеживать и управлять своими доходами и расходами, предоставляя удобный интерфейс для ввода и анализа финансовых данных.",
     "onclick": "https://it2konst.github.io/budget-calc-mvc/",
     "imgSrc": "./assets/img/cards-img/js/budget-calc-mvc.jpg",
@@ -56,16 +64,16 @@
   {
     "filterName": "cat-2",
     "cardTitle": "“Portfolio WordPress“",
-	  "technologies": ["html", "css", "JS", "jquery", "WordPress", "PHP"],
+	"technologies": ["html", "css", "JS", "jquery", "WordPress", "PHP"],
     "cardDesc": "Адаптивная верстка, натянутая на WordPress",
-	  "onclick": "https://cz88995-wordpress-xgucp.tw1.ru/",
+	"onclick": "https://cz88995-wordpress-xgucp.tw1.ru/",
     "imgSrc": "./assets/img/cards-img/word-press/portfolio-wp.jpg",
     "alt": "gallery-img"
   },
   {
     "filterName": "cat-1",
     "cardTitle": "“Loft-House“",
-	  "technologies": ["html", "scss", "JS", "grid"],
+	"technologies": ["html", "scss", "JS", "grid"],
     "cardDesc": "Адаптивный веб-сайт для продажи квартир, разработанный с использованием SCSS и JavaScript. Сайт построен на основе CSS Grid и методологии BEM, что обеспечивает гибкость и структурированность его кода.",
     "onclick": "https://it2konst.github.io/loft-house/",
     "imgSrc": "./assets/img/cards-img/html/loft-house.jpg",
@@ -74,7 +82,7 @@
   {
     "filterName": "cat-4",
     "cardTitle": "“Nikulin's Bureau“",
-	  "technologies": ["html", "scss", "grid"],
+	"technologies": ["html", "scss", "grid"],
     "cardDesc": "<i>Тестовое задание.</i> Проект представляет собой адаптивную веб-страницу, которая точно воспроизводит предоставленный прототип, обеспечивая гармоничное масштабирование элементов в пропорции 16:9. Интерактивные блоки проектов не только привлекают внимание, но и корректно отображаются на всех типах экранов, обеспечивая удобство использования.",
     "onclick": "https://it2konst.github.io/test-task-a-kh/",
     "imgSrc": "./assets/img/cards-img/test-tasks/a-kh.jpg",

@@ -2,7 +2,7 @@
     "filterName": "cat-4",
     "cardTitle": "“Evacuator“",
 	"technologies": ["html", "scss", "JS", "grid"],
-    "cardDesc": "<i>Тестовое задание.</i> Проект представляет собой адаптивную веб-страницу, которая точно воспроизводит предоставленный макет",
+    "cardDesc": "<i>Проект в разарботке.</i><br>&#9749;",
     "onclick": "https://it2konst.github.io/evacuator/",
     "imgSrc": "./assets/img/cards-img/test-tasks/evacuator.webp",
     "alt": "gallery-img"

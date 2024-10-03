@@ -1,6 +1,5 @@
 // document.addEventListener('DOMContentLoaded', () => {
 // });
-
 const cardsContainer = document.querySelector('.portfolio__tab-cards');
 
 const createCard = (myCard) => {
@@ -48,7 +47,9 @@ fetch('./assets/data/options.json')
     .then(response => response.json())
     .then(data => {
         data.forEach(myCard => {
-            cardsContainer.appendChild(createCard(myCard));
+            if (myCard.hasOwnProperty('visibleCard') && myCard.visibleCard === "true") {
+                cardsContainer.appendChild(createCard(myCard));
+            }
         });
         // Показать карточки после загрузки
         toggleCardsVisibility(true);

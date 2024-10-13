@@ -13,7 +13,8 @@ const createCard = (myCard) => {
         scss: 'fa-sass',
         JS: 'fa-js',
         WordPress: 'fa-wordpress',
-        PHP: 'fa-php'
+        PHP: 'fa-php',
+        React: 'fa-react'
     };
 
     const iconsHtml = myCard.technologies?.map(tech =>

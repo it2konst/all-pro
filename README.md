@@ -8,9 +8,9 @@
 </div>
 
 This is my portfolio, showcasing my skills and projects.<br>
-In this portfolio, you will find examples of my work using modern web technologies.<br>
+Here, you'll find examples of my work created using modern web technologies.<br>
 <br>
-Это моё портфолио, демонстрирует мои навыки и проекты.<br>
-В этом портфолио вы найдете примеры моих работ, выполненных с использованием современных веб-технологий.<br>
+Это моё портфолио, демонстрирующее мои навыки и проекты.<br>
+Здесь вы найдете примеры моих работ, выполненные с использованием современных веб-технологий.<br>
 
 ![opengraph](https://github.com/user-attachments/assets/65ee2df1-bcf9-438c-ad2d-8866f4dac8f5)

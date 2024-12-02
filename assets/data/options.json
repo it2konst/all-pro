@@ -1,4 +1,14 @@
-[  
+[
+  {
+    "filterName": "cat-1",
+	  "visibleCard": "true",
+    "cardTitle": "“Проект Технопрофи“",
+	  "technologies": ["html", "scss", "JS"],
+    "cardDesc": "Этот проект представляет собой одностраничный сайт компании “Технопрофи“, предлагающей техническую поддержку для производственных предприятий. Проект разработан для учебных целей и демонстрирует базовую структуру веб-страницы с элементами интерфейса.",
+    "onclick": "https://it2konst.github.io/technoprofi/",
+    "imgSrc": "./assets/img/cards-img/html/technoprofi.webp",
+    "alt": "Проект Технопрофи"
+  },
   {
     "filterName": "cat-5",
 	  "visibleCard": "true",

@@ -1,8 +1,18 @@
 [
   {
+    "filterName": "cat-5",
+	  "visibleCard": "true",
+    "cardTitle": "“Vue Sneakers“",
+	  "technologies": ["Vue"],
+    "cardDesc": "&#10004;&nbsp;Technical Stack:<br>Vue 3, Tailwind, Vite",
+    "onclick": "https://vue-sneakers-rho-brown.vercel.app",
+    "imgSrc": "./assets/img/cards-img/react/vue-sneakers.webp",
+    "alt": "Sneakers"
+  },
+  {
     "filterName": "cat-1",
 	  "visibleCard": "true",
-    "cardTitle": "“Проект Технопрофи“",
+    "cardTitle": "“Технопрофи“",
 	  "technologies": ["html", "scss", "JS"],
     "cardDesc": "Этот проект представляет собой одностраничный сайт компании “Технопрофи“, предлагающей техническую поддержку для производственных предприятий. Проект разработан для учебных целей и демонстрирует базовую структуру веб-страницы с элементами интерфейса.",
     "onclick": "https://it2konst.github.io/technoprofi/",
@@ -41,7 +51,7 @@
   },
   {
     "filterName": "cat-4",
-	  "visibleCard": "true",
+	  "visibleCard": "false",
     "cardTitle": "“Alpha CRM page“",
 	  "technologies": ["html", "scss", "JS", "grid"],
     "cardDesc": "<i>Проект в разработке.</i><br>&#9749;",
@@ -71,7 +81,7 @@
   },
   {
     "filterName": "cat-1",
-	  "visibleCard": "true",
+	  "visibleCard": "false",
     "cardTitle": "“Sport Watch“",
 	  "technologies": ["html", "css", "JS"],
     "cardDesc": "<i>Проект в разработке.</i><br>&#9749;",
@@ -114,7 +124,7 @@
 	  "visibleCard": "true",
     "cardTitle": "“Portfolio WordPress“",
 	  "technologies": ["html", "css", "JS", "jquery", "WordPress", "PHP"],
-    "cardDesc": "Адаптивная верстка, натянутая на WordPress",
+    "cardDesc": "Адаптивная верстка, перенесенная на WordPress",
 	  "onclick": "https://cz88995-wordpress-xgucp.tw1.ru/",
     "imgSrc": "./assets/img/cards-img/word-press/portfolio-wp.jpg",
     "alt": "Portfolio WordPress"

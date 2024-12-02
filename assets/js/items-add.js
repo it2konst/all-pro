@@ -1,24 +1,24 @@
 // document.addEventListener('DOMContentLoaded', () => {
 // });
-const cardsContainer = document.querySelector('.portfolio__tab-cards');
+const cardsContainer = document.querySelector(".portfolio__tab-cards");
 
 const createCard = (myCard) => {
-    const cardInner = document.createElement('li');
-    cardInner.classList.add('tab-card', myCard.filterName);
+    const cardInner = document.createElement("li");
+    cardInner.classList.add("tab-card", myCard.filterName);
     cardInner.dataset.category = myCard.filterName;
-    cardInner.addEventListener('click', () => window.open(myCard.onclick, '_blank'));
+    cardInner.addEventListener("click", () => window.open(myCard.onclick, "_blank"));
 
     const icons = {
-        html: 'fa-html5',
-        scss: 'fa-sass',
-        JS: 'fa-js',
-        WordPress: 'fa-wordpress',
-        PHP: 'fa-php',
-        React: 'fa-react'
+        html: "fa-html5",
+        scss: "fa-sass",
+        JS: "fa-js",
+        WordPress: "fa-wordpress",
+        PHP: "fa-php",
+        React: "fa-react",
+        Vue: "fa-vuejs",
     };
 
-    const iconsHtml = myCard.technologies?.map(tech =>
-        icons[tech] ? `<div class="icon-box"><i class="fa-brands ${icons[tech]}"></i></div>` : '').join('') || '';
+    const iconsHtml = myCard.technologies?.map((tech) => (icons[tech] ? `<div class="icon-box"><i class="fa-brands ${icons[tech]}"></i></div>` : "")).join("") || "";
 
     const cardContent = `
         <div class="tab-card__wrapper">
@@ -37,26 +37,26 @@ const createCard = (myCard) => {
 };
 
 const toggleCardsVisibility = (isVisible) => {
-    cardsContainer.style.display = isVisible ? 'flex' : 'none';
+    cardsContainer.style.display = isVisible ? "flex" : "none";
 };
 
 // Скрыть карточки на время загрузки
 toggleCardsVisibility(false);
 
 // Загрузка данных
-fetch('./assets/data/options.json')
-    .then(response => response.json())
-    .then(data => {
-        data.forEach(myCard => {
-            if (myCard.hasOwnProperty('visibleCard') && myCard.visibleCard === "true") {
+fetch("./assets/data/options.json")
+    .then((response) => response.json())
+    .then((data) => {
+        data.forEach((myCard) => {
+            if (myCard.hasOwnProperty("visibleCard") && myCard.visibleCard === "true") {
                 cardsContainer.appendChild(createCard(myCard));
             }
         });
         // Показать карточки после загрузки
         toggleCardsVisibility(true);
     })
-    .catch(error => {
-        console.error('Ошибка загрузки данных:', error);
+    .catch((error) => {
+        console.error("Ошибка загрузки данных:", error);
         // Показать карточки даже в случае ошибки, чтобы не оставлять контейнер скрытым
         toggleCardsVisibility(true);
     });

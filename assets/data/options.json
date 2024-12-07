@@ -14,7 +14,7 @@
 	  "visibleCard": "true",
     "cardTitle": "“Технопрофи“",
 	  "technologies": ["html", "scss", "JS"],
-    "cardDesc": "Этот проект представляет собой одностраничный сайт компании “Технопрофи“, предлагающей техническую поддержку для производственных предприятий. Проект разработан для учебных целей и демонстрирует базовую структуру веб-страницы с элементами интерфейса.",
+    "cardDesc": "Часть коммерческого проекта выложенного в репозитории для портфолио, разработанного с использованием HTML, SCSS и JavaScript.",
     "onclick": "https://it2konst.github.io/technoprofi/",
     "imgSrc": "./assets/img/cards-img/html/technoprofi.webp",
     "alt": "Проект Технопрофи"
@@ -34,7 +34,7 @@
 	  "visibleCard": "true",
     "cardTitle": "“Portfolio Website“",
 	  "technologies": ["html", "scss", "JS"],
-    "cardDesc": "Адаптивный веб-сайт портфолио, разработанный с использованием HTML, SCSS и JavaScript, демонстрирует современные подходы к верстке и интерактивности.",
+    "cardDesc": "Адаптивный веб-сайт портфолио, разработанный для представления моих работ и навыков с использованием HTML, SCSS и JavaScript",
     "onclick": "https://it2konst.github.io/site-portfolio/",
     "imgSrc": "./assets/img/cards-img/html/site-portfolio.webp",
     "alt": "Portfolio"
@@ -71,7 +71,7 @@
   },
   {
     "filterName": "cat-3",
-	  "visibleCard": "true",
+	  "visibleCard": "false",
     "cardTitle": "“Apartment catalog“",
 	  "technologies": ["html", "css", "JS", "bootstrap"],
     "cardDesc": "Одностраничное веб-приложение (SPA), написанное на языке JavaScript, реализующее архитектурный паттерн MVC (Model-View-Controller). Приложение обеспечивает взаимодействие с сервером для получения и отправки данных, что позволяет динамически обновлять интерфейс без перезагрузки страницы.",
@@ -101,7 +101,7 @@
   },
   {
     "filterName": "cat-4",
-	  "visibleCard": "true",
+	  "visibleCard": "false",
     "cardTitle": "“Timber processing plant“",
 	  "technologies": ["html", "scss", "JS", "Swiper"],
     "cardDesc": "<i>Тестовое задание.</i> Адаптивный веб-сайт, созданный для рекламы и продвижения продукции лесоперерабатывающего завода. Проект разработан с использованием SCSS для стилизации и JavaScript для динамического контента, структурирован по методологии БЭМ для обеспечения чистоты и поддерживаемости кода.",
@@ -111,7 +111,7 @@
   },
   {
     "filterName": "cat-3",
-	  "visibleCard": "true",
+	  "visibleCard": "false",
     "cardTitle": "“Budget calculator on MVC“",
 	  "technologies": ["html", "css", "JS"],
     "cardDesc": "Веб-приложение, разработанное с использованием архитектуры MVC (Model-View-Controller) на JavaScript. Приложение позволяет пользователям легко отслеживать и управлять своими доходами и расходами, предоставляя удобный интерфейс для ввода и анализа финансовых данных.",
@@ -121,7 +121,7 @@
   },
   {
     "filterName": "cat-2",
-	  "visibleCard": "true",
+	  "visibleCard": "false",
     "cardTitle": "“Portfolio WordPress“",
 	  "technologies": ["html", "css", "JS", "jquery", "WordPress", "PHP"],
     "cardDesc": "Адаптивная верстка, перенесенная на WordPress",
@@ -131,7 +131,7 @@
   },
   {
     "filterName": "cat-1",
-	  "visibleCard": "true",
+	  "visibleCard": "false",
     "cardTitle": "“Loft-House“",
 	  "technologies": ["html", "scss", "JS", "grid"],
     "cardDesc": "Адаптивный веб-сайт для продажи квартир, разработанный с использованием SCSS и JavaScript. Сайт построен на основе CSS Grid и методологии BEM, что обеспечивает гибкость и структурированность его кода.",
@@ -141,7 +141,7 @@
   },
   {
     "filterName": "cat-4",
-	  "visibleCard": "true",
+	  "visibleCard": "false",
     "cardTitle": "“Nikulin's Bureau“",
 	  "technologies": ["html", "scss", "grid"],
     "cardDesc": "<i>Тестовое задание.</i> Проект представляет собой адаптивную веб-страницу, которая точно воспроизводит предоставленный прототип, обеспечивая гармоничное масштабирование элементов в пропорции 16:9. Интерактивные блоки проектов не только привлекают внимание, но и корректно отображаются на всех типах экранов, обеспечивая удобство использования.",

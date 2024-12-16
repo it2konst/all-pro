@@ -60,13 +60,13 @@
     "alt": "Alpha CRM"
   },
   {
-    "filterName": "cat-1",
-	  "visibleCard": "false",
-    "cardTitle": "“Study English“",
-	  "technologies": ["html", "scss", "JS", "grid"],
+    "filterName": "cat-5",
+	  "visibleCard": "true",
+    "cardTitle": "“LinguaBoost“",
+	  "technologies": ["Vue", "scss"],
     "cardDesc": "<i>Проект в разработке.</i><br>&#9749;",
-    "onclick": "https://it2konst.github.io/es-lp/",
-    "imgSrc": "./assets/img/cards-img/html/es-lp.jpg",
+    "onclick": "https://es-lp.pages.dev",
+    "imgSrc": "./assets/img/cards-img/react/vue-es-lp.webp",
     "alt": "Study English"
   },
   {

@@ -65,7 +65,7 @@
     "cardTitle": "“LinguaBoost“",
 	  "technologies": ["Vue", "scss"],
     "cardDesc": "<i>Проект в разработке.</i><br>&#9749;",
-    "onclick": "https://es-lp.pages.dev",
+    "onclick": "https://es-lp.vercel.app/",
     "imgSrc": "./assets/img/cards-img/react/vue-es-lp.webp",
     "alt": "Study English"
   },

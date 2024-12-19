@@ -1,6 +1,12 @@
-// document.addEventListener('DOMContentLoaded', () => {
-// });
 const cardsContainer = document.querySelector(".portfolio__tab-cards");
+
+// Создать футер
+const createFooter = () => {
+    const footer = document.createElement("footer");
+    footer.classList.add("footer");
+    footer.innerHTML = `<p>© Copyright 2024 - KonstBerg.<br />All rights reserved.</p>`;
+    return footer;
+};
 
 const createCard = (myCard) => {
     const cardInner = document.createElement("li");
@@ -52,11 +58,21 @@ fetch("./assets/data/options.json")
                 cardsContainer.appendChild(createCard(myCard));
             }
         });
+
         // Показать карточки после загрузки
         toggleCardsVisibility(true);
+
+        // Добавить футер после карточек
+        const footer = createFooter();
+        document.body.appendChild(footer); // Добавляем футер в конец body
     })
     .catch((error) => {
         console.error("Ошибка загрузки данных:", error);
+
         // Показать карточки даже в случае ошибки, чтобы не оставлять контейнер скрытым
         toggleCardsVisibility(true);
+
+        // Добавить футер даже при ошибке
+        const footer = createFooter();
+        document.body.appendChild(footer);
     });

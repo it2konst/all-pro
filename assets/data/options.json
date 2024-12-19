@@ -2,6 +2,16 @@
   {
     "filterName": "cat-5",
 	  "visibleCard": "true",
+    "cardTitle": "“LinguaBoost“",
+	  "technologies": ["Vue", "scss"],
+    "cardDesc": "<i>Проект в разработке.</i><br>&#9749;",
+    "onclick": "https://es-lp.vercel.app/",
+    "imgSrc": "./assets/img/cards-img/react/vue-es-lp.webp",
+    "alt": "Study English"
+  },
+  {
+    "filterName": "cat-5",
+	  "visibleCard": "true",
     "cardTitle": "“Vue Sneakers“",
 	  "technologies": ["Vue"],
     "cardDesc": "&#10004;&nbsp;Technical Stack:<br>Vue 3, Tailwind, Vite",
@@ -58,16 +68,6 @@
     "onclick": "https://it2konst.github.io/alpham-crm/",
     "imgSrc": "./assets/img/cards-img/test-tasks/alpham-crm.webp",
     "alt": "Alpha CRM"
-  },
-  {
-    "filterName": "cat-5",
-	  "visibleCard": "true",
-    "cardTitle": "“LinguaBoost“",
-	  "technologies": ["Vue", "scss"],
-    "cardDesc": "<i>Проект в разработке.</i><br>&#9749;",
-    "onclick": "https://es-lp.vercel.app/",
-    "imgSrc": "./assets/img/cards-img/react/vue-es-lp.webp",
-    "alt": "Study English"
   },
   {
     "filterName": "cat-3",

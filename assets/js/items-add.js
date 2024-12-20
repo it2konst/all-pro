@@ -63,8 +63,8 @@ fetch("./assets/data/options.json")
         toggleCardsVisibility(true);
 
         // Добавить футер после карточек
-        const footer = createFooter();
-        document.body.appendChild(footer); // Добавляем футер в конец body
+        // const footer = createFooter();
+        // document.body.appendChild(footer); // Добавляем футер в конец body
     })
     .catch((error) => {
         console.error("Ошибка загрузки данных:", error);
@@ -73,6 +73,6 @@ fetch("./assets/data/options.json")
         toggleCardsVisibility(true);
 
         // Добавить футер даже при ошибке
-        const footer = createFooter();
-        document.body.appendChild(footer);
+        // const footer = createFooter();
+        // document.body.appendChild(footer);
     });

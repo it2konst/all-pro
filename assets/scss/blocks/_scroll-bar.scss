@@ -1,0 +1,22 @@
+html:root {
+    /*---Scroll bar colors---*/
+    --scroll-bar-color: #c5cadf;
+    --scroll-thumb-color: #70768a;
+    --scroll-thumb-hover-color: #454f6b;
+}
+
+@media (hover: hover) {
+    body::-webkit-scrollbar {
+        width: 0.5rem;
+        background: var(--scroll-bar-color);
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background: var(--scroll-thumb-color);
+    }
+
+    body::-webkit-scrollbar-thumb:hover {
+        border-radius: 1rem;
+        background: var(--scroll-thumb-hover-color);
+    }
+}

@@ -1,4 +1,8 @@
-footer {
+.footer {
+    flex: 0 0 auto;
+    max-width: 100%;
+    width: 100%;
+
     display: grid;
     place-items: center;
 

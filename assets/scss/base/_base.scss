@@ -34,18 +34,16 @@ body {
 }
 
 body {
-    display: table;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     background-color: $dark;
 
     font-family: var(--font-family), sans-serif;
     font-weight: 400;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
-}
-
-.portfolio {
-    display: table-row;
-    height: 100%;
 }
 
 .bg-wrapper {
@@ -65,9 +63,10 @@ body {
 }
 
 .container {
-    margin: 0 auto;
-    padding: 0 1rem;
     max-width: 1232px;
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
 }
 
 .none {
